@@ -85,7 +85,7 @@ clearInterval(interval);
       <div    data-aos='fade-up' id='home'  style={{backgroundRepeat:'no-repeat',backgroundImage:`url(${img})`,width:'100vw',height:'100%',backgroundSize:'contain',alignContent:'center'}}>
       <div className='bg-dark container-fluid info ' style={{opacity:'0.4',fontWeight:'bold',width:'100%',height:'100%',alignContent:'center',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:"center"}}>
         <div id='pdf' style={{position:'absolute',top:'75%',left:'60%',fontSize:'30px'}} >
-          <a href="/Resume.pdf"download> <button  style={{borderRadius:'10px',border:'none',padding:'10px'}}>&#x21E9; Download Resume</button></a>
+          <a href="/kunal-deshpande/Resume.pdf"download> <button  style={{borderRadius:'10px',border:'none',padding:'10px'}}>&#x21E9; Download Resume</button></a>
           
           </div>
         <h2 style={{fontSize:'55px',color:'white'}} >Hello!</h2>
