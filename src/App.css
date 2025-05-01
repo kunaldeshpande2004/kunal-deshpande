@@ -1,6 +1,7 @@
 
 body{
-    background-color: rgb(36, 37, 41);
+    background-color:#0A192F;
+  
 }
 
 
@@ -27,13 +28,18 @@ body{
 }
 
 
-
+button{
+    background-color: #FF6F61 !important;
+  
+}
+button:hover{
+    background-color:#db5a4f !important;
+}
 
 @media (max-width:600px) {
     #bdy{
         flex-direction: column;
-        width: 100vw;
-       
+        width: 100vw !important;
     }
     #pdf{
         top:1% !important;
@@ -43,9 +49,7 @@ body{
     #nav{
         display: flex;
         flex-direction: row;
-       
-        width: 100vw;
-       
+       width: 100% !important;
     }
     #con{
         flex-direction: column;
@@ -53,7 +57,11 @@ body{
     } 
 
     #map{
+    
         width: 100%;
+    }
+    #mapCont{
+        margin-top: 50px;
     }
     #fr{
         width: 100% !important;
@@ -63,7 +71,10 @@ body{
 padding-top: 220px; 
 height: 65% !important;
 }
-  
+#home{
+    margin-top: 7vh;
+}  
+
 }
 .light{
     color: white !important;
@@ -88,6 +99,7 @@ height: 65% !important;
           height: 100vh;
           z-index: 1000;
           border: 3px solid black;
+     
         }
         #bdy{
             margin-left: 15vw;
@@ -97,7 +109,8 @@ height: 65% !important;
      
 
 .accord{
-    background-color: rgb(35, 34, 39);
+    background-color:#1E293B;
+box-shadow: 10px 10px 10px 10px black;
     color: white;
     font-size: 20px !important;
     width:80%;
@@ -109,18 +122,71 @@ height: 65% !important;
 
 .cd{
     font-size: 20px;
-    color: white;
-    background-color: rgb(83, 80, 80);
-    margin: 15px;
+   background-color:#1E293B;
+    color:#F5F5F5;
+    box-shadow: 15px 15px 15px 15px black;
+    margin: 40px;
+    margin-top: 120px;
     cursor: pointer;
     height: 70vh;
     overflow-x: auto;
+    scrollbar-width: 5px;
 
 }
 
+.cd:hover{
+    transform: scale(1.018)  !important;
+    transition: transform 0.000000000000000000000000000000000000000000000000000000000000000001s   !important;
+    
+}
 .mg{
    
     object-position: center;
     width: 100%;
     height: 60vh;
 }
+
+input{
+    box-shadow: 10px 10px 10px 10px black;
+}
+textarea{
+    box-shadow: 10px 10px 10px 10px black;
+}
+
+   #map{
+     box-shadow:10px 10px 10px 10px black;
+   }
+   #map:hover{
+    transform: scale(1.018);
+   }
+
+   a{
+    border: 3px solid #0A192F !important;
+    color: aqua !important;
+ 
+   }
+   a:hover{
+    transform: scale(1.1);
+    box-shadow: 3px 3px 3px 3px black;
+   }
+
+   button{
+    box-shadow: 5px 5px 2px 2px black;
+   } 
+
+   button:hover{
+    transform: scale(1.01);
+   }
+::-webkit-scrollbar-track{
+    background: #45bcd1 !important;
+}
+   ::-webkit-scrollbar-thumb{
+    background: #283750 !important;
+   }
+   ::-webkit-scrollbar{
+    width: 12px;
+   }
+   ::-webkit-scrollbar-thumb:hover{
+    cursor: pointer;
+    background-color: #0A192F !important;
+   }
