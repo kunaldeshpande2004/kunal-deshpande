@@ -1,5 +1,6 @@
 
 import img from './img2.jpg'
+import img2 from './img3.jpg'
 import pj from './pj.jpg'
 import pj1 from './pj1.jpg'
 import pj2 from './pj2.jpg'
@@ -8,6 +9,11 @@ import pj4 from './pj4.jpg'
 import pj5 from './pj5.jpg'
 import pj6 from './pj6.jpg'
 import pj7 from './pj7.jpg'
+import pj8 from './pj8.png'
+import pj9 from './pj9.png'
+import pj10 from './pj10.png'
+import pj11 from './pj11.png'
+import pj12 from './pj12.png'
 import React, { useEffect, useState,useRef } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -27,6 +33,20 @@ export default function PortFolio() {
 
   const experiences = [
     {
+      title: "SAP ABAP Developer ",
+      company: "VE Commercial Vehicles Ltd.",
+      period: "Jun 2025 - Aug 2025",
+      location: "Pithampur, India",
+      description: [
+        "Developed and optimized ABAP programs for automation, data processing, and reporting in SAP ERP.",
+        "Worked on ALV report generation and automated email delivery of reports to streamline business processes.",
+        "Created and enhanced Smart Forms and Adobe Forms for printing invoices, purchase orders, and other business documents.",
+        "Utilized BDC (Batch Data Communication) ,LSMW for bulk data upload and migration tasks.",
+        "Collaborated with cross-functional teams to implement solutions, ensuring alignment with business requirements."
+      ]
+    }
+,    
+    {
       title: "Software Developer Intern",
       company: "SETV Globals",
       period: "Jan 2025 - Apr 2025",
@@ -44,7 +64,7 @@ export default function PortFolio() {
       location: "Indore-Remote",
       description: [
         "Led a 6-member team to develop a web platform for stamp collectors.",
-        "Integrated social media and e-commerce features using HTML, CSS, and JavaScript.",
+        "Integrated social media and e-commerce features using HTML, CSS,Tailwind and JavaScript.",
         "Built a responsive UI to boost community engagement.",
         "Front-End Prototype live at - https://kunaldeshpande2004.github.io/Stamp-Nation/"
       ]
@@ -78,6 +98,26 @@ export default function PortFolio() {
   const projects = [
 
     {
+      img: pj11,
+      title: "AccessFlow: SAP ABAP Request Management",
+      description: "An enterprise-grade SAP ABAP Module Pool application to automate internal request workflows across Requester, Approver, and Issuer roles. Features real-time status tracking, role-based access control, ALV reports, Smart Form document generation, custom Z-Tables, and BAPI integration for stock movement.",
+      technologies: "SAP ABAP, Module Pool Programming, ALV Grid, Smart Forms, Screen Painter, Z-Tables, Number Ranges, BAPI_GOODSMVT_CREATE",
+      demoLink: null,
+      codeLink: "https://github.com/kunaldeshpande2004/ACCESSFLOW-SAP-ABAP",
+      npmLink: null,
+    },
+ 
+    {
+      img: pj12,
+      title: "SAP BDC Bulk User Uploader",
+      description: "A custom SAP ABAP utility to automate bulk user creation via BDC. Supports tab-separated or Excel-based input files, validates user data, logs errors, and reduces manual creation time significantly. Includes file upload UI, dynamic input parsing, and transaction-based processing.",
+      technologies: "SAP ABAP, Batch Data Communication (BDC), Classical Reports, File Handling, CALL TRANSACTION, Session Method",
+      demoLink: null,
+      codeLink: "https://github.com/kunaldeshpande2004/SAP-BDC-BulkUserUploader",
+      npmLink: null,
+    },
+
+    {
       img: pj7,
       title: "ViharSutra: AI Travel Planner",
       description: "An AI-powered full-stack MERN application that helps users plan, manage, and customize their trips efficiently. It leverages AI services to auto-generate optimized travel itineraries based on user preferences, offering a seamless and personalized trip-planning experience.",
@@ -86,17 +126,52 @@ export default function PortFolio() {
       codeLink: "https://github.com/kunaldeshpande2004/ViharSutra",
       npmLink: null,
     },
+
+
+   
+    {
+      img: pj9,
+      title: "InventoryFlow-BAPI",
+      description: "An SAP ABAP tool to automate Goods Issue (201) and Stock Transfer (311) using BAPI_GOODSMVT_CREATE. Features dynamic selection screens, grouped field logic, commit/rollback handling, and modularized routines for each operation, ensuring future extensibility.",
+      technologies: "SAP ABAP, BAPI_GOODSMVT_CREATE, Module Pool Screens, SCREEN-GROUP1, BAPIRET2 Handling",
+      demoLink: null,
+      codeLink: "https://github.com/kunaldeshpande2004/InventoryFlow-BAPI",
+      npmLink: null,
+    },
+
+    {
+      img: pj6, 
+      title: "Organ Detection using AI",
+      description: "An AI-powered web app that identifies and classifies human organs from uploaded images, leveraging TensorFlow.js models for real-time predictions.",
+      technologies: "Frontend: React.js | Backend: Node.js, Express.js | AI: TensorFlow.js",
+      demoLink: "https://kunaldeshpande2004.github.io/organ-detection/", // update if you have the demo
+      codeLink: "https://github.com/kunaldeshpande2004/CV-Project",
+      npmLink: null
+    },
+    {
+      img: pj8,
+      title: "ALV StockMail Automation",
+      description: "An SAP ABAP automation solution that generates stock reports in ALV format and sends them via email to SAP and external recipients. Integrates Excel file creation, background job scheduling, dynamic filters, and CL_BCS-based email delivery for streamlined reporting.",
+      technologies: "SAP ABAP, REUSE_ALV_GRID_DISPLAY, CL_BCS, SCMS_TEXT_TO_BINARY, Background Jobs (SM36)",
+      demoLink: null,
+      codeLink: "https://github.com/kunaldeshpande2004/ALV-StockMail-Automation",
+      npmLink: null,
+    }
+   , 
+
+   
+    {
+      img: pj10,
+      title: "SAP Sales & Purchase Order Report",
+      description: "A dual-mode SAP ABAP ALV report for real-time monitoring of Sales and Purchase Orders in a unified interface. Includes dynamic filtering, reusable function modules for data enrichment, interactive ALV Grid output, and currency/quantity formatting for enhanced business usability.",
+      technologies: "SAP ABAP, ALV Grid, Function Modules, SELECT-OPTIONS, PARAMETERS, Module Pool Programming",
+      demoLink: null,
+      codeLink: "https://github.com/kunaldeshpande2004/SAP-SALES-PURCHASE-ORDER-REPORT",
+      npmLink: null,
+    },
     
     
-      {
-        img: pj6, 
-        title: "Organ Detection using AI",
-        description: "An AI-powered web app that identifies and classifies human organs from uploaded images, leveraging TensorFlow.js models for real-time predictions.",
-        technologies: "Frontend: React.js | Backend: Node.js, Express.js | AI: TensorFlow.js",
-        demoLink: "https://kunaldeshpande2004.github.io/organ-detection/", // update if you have the demo
-        codeLink: "https://github.com/kunaldeshpande2004/CV-Project",
-        npmLink: null
-      },
+   
     {
       img: pj,
       title: "CoolCars : Car Renting website prototype",
@@ -219,21 +294,28 @@ clearInterval(interval);
     </div>
   </div>
 </nav>
-      <div    data-aos='fade-up' id='home'  style={{backgroundRepeat:'no-repeat',backgroundImage:`url(${img})`,width:'100vw',height:'100%',backgroundSize:'contain',alignContent:'center'}}>
+      <div    data-aos='fade-up' id='home'  style={{backgroundRepeat:'no-repeat',backgroundImage:`url(${img2})`,width:'100vw',height:'100%',backgroundSize:'contain',alignContent:'center'}}>
       <div className=' container-fluid info ' style={{fontWeight:'bold',width:'100%',height:'100%',alignContent:'center',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:"center",color:'#64FFDA' }}>
         <div id='pdf' style={{position:'absolute',top:'75%',left:'60%',fontSize:'30px'}} >
-          <a href="./Kunal_Deshpande_Resume.pdf" download> <button  style={{borderRadius:'10px',border:'none',boxShadow:'5px 5px 5px 5px black',padding:'10px',color:'#64FFDA', backgroundColor:'#0A192F' }}>
+          <a href="./KUNAL DESHPANDE RESUME.pdf" download> <button  style={{borderRadius:'10px',border:'none',boxShadow:'5px 5px 5px 5px black',padding:'10px',color:'#64FFDA', backgroundColor:'#0A192F' }}>
             &#x21E9; Download Resume</button></a>
           
           </div>
-        <h2 style={{fontSize:'55px',color:'#64FFDA'}} >Hello!</h2>
+          <div id='pd' style={{position:'absolute',top:'25%',left:'45%',fontSize:'30px'}} >
+          <h2 style={{fontSize:'55px',color:'#64FFDA'}} >Hello!</h2>
         <h2 style={{fontSize:'35px'}}>I Am Kunal Deshpande  From Indore ,India</h2>
        
         <h2  style={{fontSize:'30px'}} >I Am {info[index]} </h2>
+          </div>
+       
       </div>
       <div  data-aos='fade-up' id='about' style={{padding:'20px',backgroundColor:'#0A192F'}} >
         <h2> About Me</h2>
-        <h4>Hi, I am Kunal Deshpande I live in Indore Madhya Pradesh India . As a passionate Computer Science student with a strong foundation in full-stack development, I thrive on transforming complex problems into innovative digital solutions. My journey has been driven by a love for coding, a curiosity for new technologies, and a commitment to continuous learning. From developing dynamic web applications to exploring the depths of algorithmic challenges, I bring both creativity and precision to my work. I am eager to contribute my skills in a collaborative environment, where I can push the boundaries of what's possible in technology</h4>
+        <h4>Hi, I’m Kunal Deshpande, a Computer Science student from Indore, Madhya Pradesh, India, pursuing my B.Tech at Medi-Caps University. I’m passionate about crafting innovative, efficient, and user-centric digital solutions. With a strong foundation in full-stack development using the MERN stack and solid programming skills in JavaScript, C++, and Java, I thrive on turning complex problems into impactful applications.
+
+Beyond web development, I’ve gained industry-level experience in SAP ABAP during my internship at VE Commercial Vehicles (VECV), where I worked on creating and enhancing custom ABAP programs, ALV reports, and BDC recordings. This hands-on exposure has strengthened my ERP development skills and fueled my growing interest in SAP technologies.
+
+I’m driven by curiosity, creativity, and a commitment to continuous learning, always seeking opportunities to build solutions that make a difference.</h4>
         <br />
         <h2>About My Eduction</h2>
         <br />
@@ -462,19 +544,19 @@ clearInterval(interval);
       </ul>
       
       <div className="mt-4 pt-3 border-t border-white/10">
-        <div className="flex flex-wrap gap-2">
-          {[...new Set(
-            exp.description.join(' ')
-              .match(/(React\.?js|Node\.?js|Flask|HTML|CSS|JavaScript|Tailwind|Azure|Express\.?js)/gi) || []
-          )].map((tech, i) => (
-            <span 
-              key={i} 
-              className="text-xs font-mono px-2 py-1 rounded bg-white/10 text-[#64ffda] border border-white/10"
-            >
-              {tech.replace('.', '')}
-            </span>
-          ))}
-        </div>
+      <div className="flex flex-wrap gap-2 overflow-x-auto py-1">  {/* Added overflow handling */}
+  {[...new Set(
+    exp.description.join(' ')
+      .match(/(React\.?js|Node\.?js|Flask|HTML|CSS|JavaScript|Tailwind|Azure|Express\.?js|SAP|ABAP|ERP|ALV|BDC|KERAS|SMART FORMS|ADOBE FORMS|LSMW)/gi) || []
+  )].map((tech, i) => (
+    <span 
+      key={i} 
+      className="text-[10px] my-2 mx-2 xs:text-xs font-mono px-2 py-1 rounded bg-white/10 text-[#64ffda] border border-white/10 whitespace-nowrap flex-shrink-0" 
+    >
+      {tech.replace(/\./g, '')}  {/* Fixed regex to remove all dots */}
+    </span>
+  ))}
+</div>
       </div>
     </div>
   ))}
