@@ -1,24 +1,30 @@
 {
   "files": {
-    "main.css": "/kunal-deshpande/static/css/main.34d055f5.css",
-    "main.js": "/kunal-deshpande/static/js/main.3303372f.js",
+    "main.css": "/kunal-deshpande/static/css/main.20d7e197.css",
+    "main.js": "/kunal-deshpande/static/js/main.c1ad1595.js",
     "static/js/453.4b54c96b.chunk.js": "/kunal-deshpande/static/js/453.4b54c96b.chunk.js",
+    "static/media/img3.jpg": "/kunal-deshpande/static/media/img3.3d6a05fb5378dce4fdf1.jpg",
     "static/media/pj.jpg": "/kunal-deshpande/static/media/pj.06518fc983e109f41392.jpg",
     "static/media/img2.jpg": "/kunal-deshpande/static/media/img2.fc0c99ee9bcc44eb2d0c.jpg",
     "static/media/pj1.jpg": "/kunal-deshpande/static/media/pj1.4384bea1907ab3484289.jpg",
     "static/media/pj4.jpg": "/kunal-deshpande/static/media/pj4.6b9f1f0b389690266e97.jpg",
+    "static/media/pj10.png": "/kunal-deshpande/static/media/pj10.5d1c58eabc4c2bbc644d.png",
     "static/media/pj2.jpg": "/kunal-deshpande/static/media/pj2.e469f70135d75666d3df.jpg",
     "static/media/pj7.jpg": "/kunal-deshpande/static/media/pj7.d481dd42917bf022a5d8.jpg",
     "static/media/pj5.jpg": "/kunal-deshpande/static/media/pj5.2a10b5ba40e735c58d00.jpg",
     "static/media/pj3.jpg": "/kunal-deshpande/static/media/pj3.7569a15b9bf4e620a725.jpg",
+    "static/media/pj12.png": "/kunal-deshpande/static/media/pj12.fe25810362e5321414d6.png",
+    "static/media/pj11.png": "/kunal-deshpande/static/media/pj11.276c0691eb9099ae96b6.png",
     "static/media/pj6.jpg": "/kunal-deshpande/static/media/pj6.8e8147633fd113da4c22.jpg",
+    "static/media/pj9.png": "/kunal-deshpande/static/media/pj9.083c0022ec62127dfed8.png",
+    "static/media/pj8.png": "/kunal-deshpande/static/media/pj8.64250dd22c79999ad7bd.png",
     "index.html": "/kunal-deshpande/index.html",
-    "main.34d055f5.css.map": "/kunal-deshpande/static/css/main.34d055f5.css.map",
-    "main.3303372f.js.map": "/kunal-deshpande/static/js/main.3303372f.js.map",
+    "main.20d7e197.css.map": "/kunal-deshpande/static/css/main.20d7e197.css.map",
+    "main.c1ad1595.js.map": "/kunal-deshpande/static/js/main.c1ad1595.js.map",
     "453.4b54c96b.chunk.js.map": "/kunal-deshpande/static/js/453.4b54c96b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.34d055f5.css",
-    "static/js/main.3303372f.js"
+    "static/css/main.20d7e197.css",
+    "static/js/main.c1ad1595.js"
   ]
 }
